@@ -48,7 +48,7 @@ public class Exercise03ConditionalStatements {
     public int absoluteValue(int number) {
         
         if(number < 0) {
-            return Math.abs(number);
+            return -number;
         } else {
             return number;
         }       
@@ -68,7 +68,7 @@ public class Exercise03ConditionalStatements {
         } else {
             return false;
         }
-        
+
         /* throw new UnsupportedOperationException(); */
     }
     
