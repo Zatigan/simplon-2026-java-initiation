@@ -1,5 +1,8 @@
 package fr.simplon.exercises;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 /**
  * Exercice 8: Manipulation de chaînes de caractères
  * 
@@ -13,8 +16,17 @@ public class Exercise08StringManipulation {
      * @return la chaîne inversée
      */
     public String reverseString(String str) {
-        throw new UnsupportedOperationException();
+        
+        String[] arrayedStr = str.split("");
 
+        String[] result;
+
+        for (int i = arrayedStr.length ; i > 0; i--) {
+            Arrays.fill(result, arrayedStr[i]);
+        }
+
+        
+        /* throw new UnsupportedOperationException(); */
     }
     
     /**

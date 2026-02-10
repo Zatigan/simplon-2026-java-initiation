@@ -37,6 +37,7 @@ public class Exercise04Loops {
         int reversed = 0;
 
         while (number != 0) {
+            /* Division par 10 donc on ne récupère que les unités */
             int digit = number % 10;
             reversed = reversed * 10 + digit;
             number /= 10;
@@ -57,6 +58,7 @@ public class Exercise04Loops {
 
         int result = 1;
 
+        /* Pour optimiser la boucle, on peut mettre i à 2 et éviter un tour de boucle inutile */
         for (int i = 1; i <= n; i++) {
             result = result * i;
         }
