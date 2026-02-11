@@ -1,8 +1,5 @@
 package fr.simplon.exercises;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 /**
  * Exercice 8: Manipulation de chaînes de caractères
  * 
@@ -114,7 +111,7 @@ public class Exercise08StringManipulation {
 
         for (int i = 0; i < arrayedStr.length; i++) {
             String answer = arrayedStr[i];
-            arrayedStr[i] = answer.substring(0,1).toUpperCase()+answer.substring(1);
+            arrayedStr[i] = answer.substring(0,1).toUpperCase() + answer.substring(1);
         }
 
         return String.join(" ", arrayedStr);
